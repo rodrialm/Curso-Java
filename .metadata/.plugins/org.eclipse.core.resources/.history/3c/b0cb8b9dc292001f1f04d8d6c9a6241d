@@ -1,0 +1,20 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class ConversorTemperatura {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner (System.in);
+		
+		double temp = entrada.nextDouble();
+		
+		System.out.printf("Escolha qual conversão deseja fazer da temperatura %.2f°",temp );
+		
+//		double calculo = 
+		
+		
+		entrada.close();
+	}
+}

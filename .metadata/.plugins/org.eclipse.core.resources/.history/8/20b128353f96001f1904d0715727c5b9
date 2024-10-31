@@ -1,0 +1,38 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		Double fim = 0d;
+		Double valor = 0d;
+		double contagem = 0;
+		double nota = 0;
+		do {
+			while( fim!= -1) {		
+			if (valor <0 || valor > 10) {
+			valor = entrada.nextDouble();
+			System.out.println("valor informado não é aceito!");
+			System.out.println("Informe o valor correto da nota:");
+			}
+			else if (valor >= 0 || valor <= 10){
+				System.out.println("Informe o valor da nota:");
+				valor = entrada.nextDouble(); 
+				contagem++;
+			}
+			
+			nota += valor;
+			fim = valor;
+			System.out.printf("\nA nota informa é %.1f.\n"
+					+ "A nota total é de %.1f.\n"
+					+ "Sendo um total de %.1f notas informadas."
+					+ "\n\n",valor , nota , contagem);
+			} 
+		}while (fim != -1);
+		
+		entrada.close();
+	}
+}

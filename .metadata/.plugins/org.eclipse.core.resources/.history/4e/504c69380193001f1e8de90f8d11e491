@@ -1,0 +1,17 @@
+package fundamentos.operadores;
+
+import java.util.Scanner;
+
+public class DesafioQuadradoCuco {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Informe o valor para ser elevado ao Quadrado e ao Cubo: ");
+				
+		double quadrado = Math.pow(entrada, 2);
+		double cubo = Math.pow(entrada, 3);
+		
+		entrada.close();
+	}
+}

@@ -1,0 +1,22 @@
+package controle;
+
+import java.util.Scanner;
+
+public class WhileIndeterminado {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Olá, como posso ajudar? ");
+		String comando = entrada.nextLine();
+		
+		if (comando.equalsIgnoreCase("sair")) {
+			System.out.println("Encerrando!");
+		} else if (comando.equals("sair")){
+			System.out.print("Olá como posso ajudar? ");
+		} else {
+			System.out.println("Não entendi.");
+		}
+		entrada.close();
+	}
+}

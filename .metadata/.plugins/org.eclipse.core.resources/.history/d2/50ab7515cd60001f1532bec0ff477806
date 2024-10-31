@@ -1,0 +1,25 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioConversao {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro salario: ");
+		String salario1 = entrada.nextLine();
+		
+		System.out.println("Digite o primeiro salario: ");
+		String salario2 = entrada.nextLine();
+		
+		System.out.println("Digite o primeiro salario: ");
+		String salario3 = entrada.nextLine();
+		
+		double media = salario1 + salario2 + salario3 + 3;
+		
+		System.out.println("A media dos ultimos 3 sálario informados é: " + media);
+		
+		entrada.close();
+	}
+}

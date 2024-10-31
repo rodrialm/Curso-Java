@@ -1,0 +1,26 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		Double fim = 0d;
+		
+		do {
+			
+			if ( <= 0 || valor > 10) {
+				
+			System.out.println("informe o valor da nota:");
+//			Double valor = entrada.nextDouble();
+			
+			
+			fim = valor; 
+			}
+		} while (fim != -1);
+		
+		entrada.close();
+	}
+}

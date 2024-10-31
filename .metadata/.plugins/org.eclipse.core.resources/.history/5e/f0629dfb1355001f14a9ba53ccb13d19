@@ -1,0 +1,15 @@
+package fundamentos;
+
+public class Temperatura {
+	
+	public static void main(String[] args) {
+		//(°F - 32) x 5/9 = °C
+	
+		final double ajuste = 32;
+		final double fator = 5.0/9;
+		double F = 0;
+		double C = 0;
+		
+		System.out.println(F + "Em celcius é: " + C);
+	}
+}

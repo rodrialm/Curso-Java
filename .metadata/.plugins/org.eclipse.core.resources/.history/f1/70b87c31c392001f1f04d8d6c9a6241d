@@ -1,0 +1,22 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class ConversorTemperatura {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.println("Informe o valor de temperatura que deseja converter: ");
+		double temp = entrada.nextDouble();
+		
+		System.out.printf("Escolha qual conversão deseja fazer da temperatura %.2f° \n"
+				+ "Digite 'F' para fazer conversão de fahrenheit para Celsius.",temp );
+		
+//		double calculo = 
+		
+		
+		entrada.close();
+	}
+}

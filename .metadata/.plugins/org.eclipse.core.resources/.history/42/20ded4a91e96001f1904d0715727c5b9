@@ -1,0 +1,19 @@
+package controle;
+
+import java.util.Scanner;
+
+public class WhileIndeterminado {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		String comando = entrada.nextLine();
+		
+		if (comando.equalsIgnoreCase("sair")) {
+			System.out.println("Encerrando!");
+		} else if (comando.compareToIgnoreCase("sair")){
+			String comando2 = entrada.nextLine();
+		}
+		entrada.close();
+	}
+}
