@@ -1,0 +1,18 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioPar {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		double num1 = entrada.nextDouble();
+		
+		if (num1 % 2 == 0) {
+			
+		}
+		
+		entrada.close();
+	}
+}
