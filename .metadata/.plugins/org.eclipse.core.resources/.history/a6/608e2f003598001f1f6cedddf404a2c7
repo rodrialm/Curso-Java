@@ -1,0 +1,19 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioNumeroPrimo {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.println("Informe o numero que deseja saber se ele é um numero primo: ");
+		int valor = entrada.nextInt();
+		if (valor % valor == 0) {
+			
+		}
+		
+		entrada.close();
+	}
+}
