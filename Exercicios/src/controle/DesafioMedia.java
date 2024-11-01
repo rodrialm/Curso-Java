@@ -14,17 +14,20 @@ public class DesafioMedia {
 		for (int i = 1; i <= 1; i++) {
 			System.out.print("Informe o valor da primeira nota: ");
 			nota1 = entrada.nextDouble();
-			while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+			if (nota1 < 0 || nota1 > 10) {
 				System.out.println("Erro!");
-				
+			} else {
+				System.out.println("Ok!");
 			}
-			while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+
+			System.out.print("Informe o valor da segunda nota: ");
+			nota2 = entrada.nextDouble();
+			if (nota2 < 0 || nota2 > 10) {
 				System.out.println("Erro!");
-
-				System.out.print("Informe o valor da segunda nota: ");
-				nota2 = entrada.nextDouble();
-
+			} else {
+				System.out.println("Ok!");
 			}
+
 		}
 		double media = (nota1 + nota2) / 2;
 
