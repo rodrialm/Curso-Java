@@ -33,8 +33,6 @@ public class DesafioMedia {
 		}
 		double media = (nota1 + nota2) / 2;
 
-		System.out.println("\nMédia do Aluno: " + media);
-
 		if (media >= 7) {
 			System.out.println("Aprovado");
 		} else if (media < 7 && media > 4) {
@@ -43,6 +41,7 @@ public class DesafioMedia {
 			System.out.println("Reprovado");
 		}
 
+		System.out.println("\nMédia do Aluno" + media);
 		entrada.close();
 	}
 }

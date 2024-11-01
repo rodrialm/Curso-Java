@@ -15,7 +15,7 @@ public class DesafioMedia {
 			System.out.print("Informe o valor da primeira nota: ");
 			nota1 = entrada.nextDouble();
 			while (nota1 < 0 || nota1 > 10) {
-				System.out.print("Erro! \nDigite novamente:");
+				System.out.println("Erro! \nDigite novamente:");
 				nota1 = entrada.nextDouble();
 			} 
 				System.out.println("Ok!");
@@ -23,17 +23,14 @@ public class DesafioMedia {
 
 			System.out.print("Informe o valor da segunda nota: ");
 			nota2 = entrada.nextDouble();
-			while (nota2 < 0 || nota2 > 10) {
-				System.out.print("Erro! \nDigite novamente:");
-				nota2 = entrada.nextDouble();
-			} 
+			if (nota2 < 0 || nota2 > 10) {
+				System.out.println("Erro!");
+			} else {
 				System.out.println("Ok!");
-			
+			}
 
 		}
 		double media = (nota1 + nota2) / 2;
-
-		System.out.println("\nMédia do Aluno: " + media);
 
 		if (media >= 7) {
 			System.out.println("Aprovado");
@@ -43,6 +40,7 @@ public class DesafioMedia {
 			System.out.println("Reprovado");
 		}
 
+		System.out.println("\nMédia do Aluno" + media);
 		entrada.close();
 	}
 }
